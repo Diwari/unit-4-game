@@ -48,7 +48,7 @@ var startAndReset = function(){
         console.log("Shoryuken");
     }
     
-    $("#previous").html("Your current Number" + previous);
+    $("#previous").html("Your current Number:" + previous);
 }
 
 startAndReset();
@@ -68,13 +68,13 @@ $(document).on('click',".crystal", function () {
 
     previous += num;
 
-    $("#previous").html(previous);
+    $("#previous").html("Your current Number:" + previous);
 
     console.log( previous )
 
     if(previous > random_result ){
-        loses--;
-        $("#loses").html("loses" + loses)
+        loses ++;
+        $("#loses").html("Loses:" + loses)
 
         previous = 0;
 
@@ -85,7 +85,7 @@ $(document).on('click',".crystal", function () {
     }
     else if(previous === random_result){
         wins ++;
-        $("#wins").html("wins"+ wins)
+        $("#wins").html("Wins:"+ wins)
 
         previous = 0;
 

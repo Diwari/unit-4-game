@@ -1,5 +1,8 @@
 
-
+body{
+    background-image:url("../images/Final_Fantasy_XIV_ARR_crystal.jpg");
+    background-size:cover;
+}
 .crystals{
     display:flex;
     justify-content: space-between;
@@ -15,14 +18,38 @@
     width:200px;
     border-radius:4px;
     box-shadow:5px 5px 5px rgba(0,0,0,0.5);
-    transition: box-shadow 1s;
+    transition: box-shadow 1s, transform 2s;
 
 }
 .crystal:hover{
     box-shadow:15px 15px 15px rgba(0,0,0,0.5);
     cursor: pointer;
-    transition: box-shadow 1s;
+    transform: translate(5px, 30px);
+    transition: box-shadow 1s, transform 2s;
 }
 img{
     width: 50px;
+}
+p{
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    background-image: url("../images/Parchment.jpg");
+    background-size:cover;
+    margin-right:1400px;
+    margin-left:200px;
+    margin-bottom:20px;
+    margin-top:20px;
+    padding:30px;
+}
+h1{
+    background-image: url("../images/Parchment.jpg");
+    background-size:cover;
+    text-align:center;
+    font-size:70px;
+    margin-left:500px;
+    margin-right:500px;
+    margin-bottom:20px;
+    padding:30px;
+
 }
